@@ -1,0 +1,48 @@
+[
+    {
+        "_id": 1,
+        "name": "Steve Jobs",
+        "comment": "Actually, this one deserved a 4.5 star to leave room for improvement."
+    },
+    {
+        "_id": 2,
+        "name": "Bill Gates",
+        "comment": "Best products in town!"
+    },
+    {
+        "_id": 3,
+        "name": "Malinda Gates",
+        "comment": "Very professional people. Got products on time."
+    },
+    {
+        "_id": 4,
+        "name": "Steve Wozniak",
+        "comment": "Fast delivery. Good attitude."
+    },
+    {
+        "_id": 5,
+        "name": "Michael Jackson",
+        "comment": "Very professional customer support!"
+    },
+    {
+        "_id": 6,
+        "name": "Jeff Bezos",
+        "comment": "They worked very well for me."
+    },
+    {
+        "_id": 7,
+        "name": "Elon Musk",
+        "comment": "Fast, friendly and professional people."
+    },
+    {
+        "_id": 8,
+        "name": "Jason Bourn",
+        "comment": "Very helpful towards local business. Got my products on time."
+    },
+    {
+        "_id": 9,
+        "name": "James Bond",
+        "comment": "Most professional people I've ever seen. Also has a very fast delivery system."
+    }
+    
+]
