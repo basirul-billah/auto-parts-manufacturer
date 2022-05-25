@@ -12,11 +12,10 @@ const Navbar = () => {
     };
 
     const menuItems = <>
-        <li>{user?.displayName}</li>
         <li>
             {
                 user
-                    ? <button onClick={logout} className="btn btn-ghost text-base font-normal normal-case">Sign Out</button>
+                    ? <button onClick={logout} className="btn btn-ghost text-base font-normal normal-case">{user?.displayName} Sign Out</button>
                     : <Link to='/login'>Login</Link>
             }
         </li>
