@@ -2,7 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import MyProfile from './Pages/Dashboard/MyProfile';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
@@ -17,16 +20,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path="/home" element={<Home></Home>} />
-          <Route path="/products/:productId" element={
-            <RequireAuth>
-              <Purchase></Purchase>
-            </RequireAuth>
-          }/>
-          <Route path="/dashboard" element={
-            <RequireAuth>
-              <Dashboard></Dashboard>
-            </RequireAuth>
-          }/>
+          <Route path="/products/:productId" element={<RequireAuth><Purchase/></RequireAuth>}/>
+          <Route path="/dashboard" element={<RequireAuth><Dashboard/></RequireAuth>}>
+            <Route index element={<MyOrders/>}/>
+            <Route path="/dashboard/addreview" element={<AddReview/>}/>
+            <Route path="/dashboard/myprofile" element={<MyProfile/>}/>
+          </Route>
           <Route path="/login" element={<Login></Login>} />
           <Route path="/signup" element={<SignUp></SignUp>} />
         </Routes>
