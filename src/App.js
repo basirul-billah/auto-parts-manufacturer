@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
@@ -19,6 +20,11 @@ function App() {
           <Route path="/products/:productId" element={
             <RequireAuth>
               <Purchase></Purchase>
+            </RequireAuth>
+          }/>
+          <Route path="/dashboard" element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
             </RequireAuth>
           }/>
           <Route path="/login" element={<Login></Login>} />
