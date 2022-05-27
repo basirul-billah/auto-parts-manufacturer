@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import Blog from './Pages/Blog/Blog';
 import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
@@ -11,6 +12,7 @@ import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import NotFound from './Pages/NotFound/NotFound';
+import Portfolio from './Pages/Portfolio/Portfolio';
 import Purchase from './Pages/Purchase/Purchase';
 
 function App() {
@@ -27,9 +29,11 @@ function App() {
             <Route path="/dashboard/addreview" element={<AddReview/>}/>
             <Route path="/dashboard/myprofile" element={<MyProfile/>}/>
           </Route>
-          <Route path="/login" element={<Login></Login>} />
-          <Route path="/signup" element={<SignUp></SignUp>} />
-          <Route path="/*" element={<NotFound></NotFound>}/>
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/*" element={<NotFound/>}/>
         </Routes>
       </div>
       <Footer></Footer>
