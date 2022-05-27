@@ -16,7 +16,7 @@ const Products = () => {
             <h1 className="font-bold text-3xl my-4">Featured Products</h1>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-items-center">
                 {
-                    products.slice(0, 3).map(product => <Product
+                    products.slice(0, 6).map(product => <Product
                         key={product._id}
                         item={product}
                     ></Product>)

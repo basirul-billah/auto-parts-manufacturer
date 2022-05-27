@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import Loading from '../../Components/Loading';
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -11,6 +12,7 @@ const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
     const location = useLocation();
+    const [token] = useToken(user || googleUser);
 
     let from = location.state?.from?.pathname || '/home';
     let signInError;
@@ -21,9 +23,11 @@ const Login = () => {
     };
 
     // after successful user creation goes to the previous link or home
-    if(user || googleUser) {
-        navigate(from, { replace: true });
-    }
+    useEffect(() => {
+        if(token) {
+            navigate(from, { replace: true });
+        }
+    }, [token, from, navigate])
 
     if (loading || googleLoading) {
         return <Loading></Loading>;

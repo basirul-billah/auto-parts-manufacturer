@@ -9,6 +9,7 @@ const Navbar = () => {
 
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken');
     };
 
     const menuItems = <>
@@ -16,7 +17,7 @@ const Navbar = () => {
         <li><Link to='/blog'>Blog</Link></li>
         <li><Link to='/portfolio'>Portfolio</Link></li>
         <li>{user && <Link to='/dashboard'>Dashboard</Link>}</li>
-        <li><Link to='/dashboard/myprofile'>{user?.displayName}</Link></li>
+        <li>{user && <Link to='/dashboard/myprofile'>{user?.displayName}</Link>}</li>
         <li>
             {
                 user

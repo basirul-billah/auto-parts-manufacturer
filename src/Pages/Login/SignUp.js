@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import Loading from '../../Components/Loading';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -15,7 +16,8 @@ const SignUp = () => {
     let signInLoading;
     const navigate = useNavigate();
     const location = useLocation()
-    let from = location.state?.from?.pathname || '/home';
+    let from = location.state?.from?.pathname || '/';
+    const [token] = useToken(user || googleUser);
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
@@ -23,9 +25,11 @@ const SignUp = () => {
     };
 
     // after successful user creation goes to the previous link or home
-    if (user || googleUser) {
-        navigate(from, { replace: true });
-    }
+    useEffect(() => {
+        if (token) {
+            navigate(from, { replace: true });
+        }
+    }, [])
 
     if (loading || googleLoading || updating) {
         return <Loading></Loading>;
@@ -51,7 +55,7 @@ const SignUp = () => {
                                 type="text"
                                 placeholder="Your name"
                                 className="input input-bordered w-full max-w-xs"
-                                {...register("name", {
+                                {...register("displayName", {
                                     required: {
                                         value: true,
                                         message: 'Name is required'

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
 
 const Purchase = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -10,15 +11,42 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
     const [product, setProduct] = useState({});
 
-    const onSubmit = data => {
-        console.log(data);
-    }
+    
+    const onSubmit = (data, e) => {
 
+        e.preventDefault();
+        
+        const order = {
+            orderId: product._id,
+            orderName: e.target.productName.value,
+            orderQuantity: data.quantity,
+            customerName: data.name,
+            customerEmail: data.email,
+            customerAddress: data.address,
+            customerPhone: data.phone,
+        }
+
+        fetch('http://localhost:5000/orders', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    toast("Your order is successfully placed!");
+                }
+            })
+    }
+    
     useEffect(() => {
         fetch(`http://localhost:5000/products/${productId}`)
-            .then(res => res.json())
-            .then(data => setProduct(data))
+        .then(res => res.json())
+        .then(data => setProduct(data))
     }, [])
+    
 
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-center mt-5">
@@ -64,6 +92,7 @@ const Purchase = () => {
                             className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
                             type="text"
                             placeholder="Your full address"
+                            name="address"
                             {...register("address", {
                                 required: {
                                     value: true,
@@ -102,8 +131,9 @@ const Purchase = () => {
                             className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
                             type="text"
                             placeholder="Product Name"
-                            value={product.name || ' '}
-                            {...register("productName")} />
+                            value={product.name}
+                            name="productName"
+                        />
                     </div>
 
                     {/* product quantity */}
