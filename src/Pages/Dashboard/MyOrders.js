@@ -10,7 +10,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth);
     const [deleteOrder, setDeleteOrder] = useState(null);
 
-    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch(`http://localhost:5000/orders?customerEmail=${user.email}`,)
+    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch(`https://secret-harbor-07747.herokuapp.com/orders?customerEmail=${user.email}`,)
         .then(res => res.json()));
 
     if (isLoading) {

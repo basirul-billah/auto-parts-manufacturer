@@ -16,7 +16,7 @@ const AddReview = () => {
             rating: data.rating,
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://secret-harbor-07747.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
