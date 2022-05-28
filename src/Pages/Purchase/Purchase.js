@@ -11,11 +11,11 @@ const Purchase = () => {
     const [user] = useAuthState(auth);
     const [product, setProduct] = useState({});
 
-    
+
     const onSubmit = (data, e) => {
 
         e.preventDefault();
-        
+
         const order = {
             orderId: product._id,
             orderName: e.target.productName.value,
@@ -40,13 +40,13 @@ const Purchase = () => {
                 }
             })
     }
-    
+
     useEffect(() => {
         fetch(`http://localhost:5000/products/${productId}`)
-        .then(res => res.json())
-        .then(data => setProduct(data))
+            .then(res => res.json())
+            .then(data => setProduct(data))
     }, [])
-    
+
 
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-center mt-5">
@@ -74,7 +74,7 @@ const Purchase = () => {
                             className="w-full px-2 py-1 text-gray-700 bg-gray-200 rounded"
                             type="text"
                             placeholder="Your Name"
-                            value={user?.displayName || ' '}
+                            value={user?.displayName}
                             {...register("name")}
                         />
                     </div>
@@ -82,7 +82,7 @@ const Purchase = () => {
                     {/* email field */}
                     <div className="mt-2">
                         <label className="block text-sm text-gray-600" htmlFor="cus_email">Email</label>
-                        <input className="w-full px-2 py-1 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required value={user?.email || ' '} placeholder="Your Email" {...register("email")} />
+                        <input className="w-full px-2 py-1 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required value={user?.email} placeholder="Your Email" {...register("email")} />
                     </div>
 
                     {/* address field */}
@@ -131,7 +131,8 @@ const Purchase = () => {
                             className="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded"
                             type="text"
                             placeholder="Product Name"
-                            value={product.name}
+                            readOnly
+                            value={product.name || ' '}
                             name="productName"
                         />
                     </div>

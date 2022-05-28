@@ -1,9 +1,8 @@
 import React from 'react';
-import { toast } from 'react-toastify';
 
-const OrderRow = ({ order, index, refetch, setDeleteOrder }) => {
+const OrderRow = ({ order, index, setDeleteOrder }) => {
 
-    const { _id, orderName, orderQuantity } = order;
+    const { orderName, orderQuantity } = order;
 
     return (
         <tr>
@@ -14,9 +13,9 @@ const OrderRow = ({ order, index, refetch, setDeleteOrder }) => {
                 <label
                     onClick={() => setDeleteOrder(order)}
                     htmlFor="delete-confirm-modal"
-                    className="btn btn-xs btn-error"
+                    className="btn btn-xs btn-error mr-2"
                 >Remove</label>
-                <button className='btn btn-primary mr-2'>Purchase</button>
+                <button className='btn btn-xs btn-success'>Purchase</button>
             </td>
         </tr>
     );

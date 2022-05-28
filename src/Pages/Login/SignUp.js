@@ -21,7 +21,7 @@ const SignUp = () => {
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
-        await updateProfile({ displayName: data.name });
+        await updateProfile({ displayName: data.displayName });
     };
 
     // after successful user creation goes to the previous link or home
@@ -64,7 +64,7 @@ const SignUp = () => {
                                 }
                             />
                             <label className="label">
-                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-600">{errors.name.message}</span>}
+                                {errors.displayName?.type === 'required' && <span className="label-text-alt text-red-600">{errors.displayName.message}</span>}
                             </label>
                         </div>
 
