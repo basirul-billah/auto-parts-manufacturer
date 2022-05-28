@@ -68,7 +68,7 @@ const Purchase = () => {
                     <p className="text-gray-800 text-xl font-medium my-2">Customer information</p>
 
                     {/* name field */}
-                    <div className="">
+                    <div>
                         <label className="block text-sm text-gray-00" htmlFor="cus_name">Name</label>
                         <input
                             className="w-full px-2 py-1 text-gray-700 bg-gray-200 rounded"

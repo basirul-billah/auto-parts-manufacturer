@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Product from './Product';
+import axios from 'axios';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:5000/products')
-            .then(res => res.json())
+        axios.get('http://localhost:5000/products')
             .then(data => setProducts(data))
     }, []);
     

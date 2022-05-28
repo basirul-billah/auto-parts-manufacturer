@@ -1,48 +1,66 @@
 [
     {
         "_id": 1,
-        "name": "Steve Jobs",
-        "comment": "Actually, this one deserved a 4.5 star to leave room for improvement."
+        "customerName": "Steve Jobs",
+        "customerEmail": "steve@user.com",
+        "customerReview": "Actually, this one deserved a 4.5 star to leave room for improvement.",
+        "rating": "4"
     },
     {
         "_id": 2,
-        "name": "Bill Gates",
-        "comment": "Best products in town!"
+        "customerName": "Bill Gates",
+        "customerEmail": "bill@user.com",
+        "customerReview": "Best products in town!",
+        "rating": "4"
     },
     {
         "_id": 3,
-        "name": "Malinda Gates",
-        "comment": "Very professional people. Got products on time."
+        "customerName": "Malinda Gates",
+        "customerEmail": "malinda@user.com",
+        "customerReview": "Very professional people. Got products on time.",
+        "rating": "4"
     },
     {
         "_id": 4,
-        "name": "Steve Wozniak",
-        "comment": "Fast delivery. Good attitude."
+        "customerName": "Steve Wozniak",
+        "customerEmail": "wozniak@user.com",
+        "customerReview": "Fast delivery. Good attitude.",
+        "rating": "4"
     },
     {
         "_id": 5,
-        "name": "Michael Jackson",
-        "comment": "Very professional customer support!"
+        "customerName": "Michael Jackson",
+        "customerEmail": "michael@user.com",
+        "customerReview": "Very professional customer support!",
+        "rating": "4"
     },
     {
         "_id": 6,
-        "name": "Jeff Bezos",
-        "comment": "They worked very well for me."
+        "customerName": "Jeff Bezos",
+        "customerEmail": "jeff@user.com",
+        "customerReview": "They worked very well for me.",
+        "rating": "4"
     },
     {
         "_id": 7,
-        "name": "Elon Musk",
-        "comment": "Fast, friendly and professional people."
+        "customerName": "Elon Musk",
+        "customerEmail": "elon@user.com",
+        "customerReview": "Fast, friendly and professional people.",
+        "rating": "4"
     },
     {
         "_id": 8,
-        "name": "Jason Bourn",
-        "comment": "Very helpful towards local business. Got my products on time."
+        "customerName": "Jason Bourn",
+        "customerEmail": "jason@user.com",
+        "customerReview": "Very helpful towards local business. Got my products on time.",
+        "rating": "4"
     },
     {
         "_id": 9,
-        "name": "James Bond",
-        "comment": "Most professional people I've ever seen. Also has a very fast delivery system."
+        "customerName": "James Bond",
+        "customerEmail": "james@user.com",
+        "customerReview": "Most professional people I've ever seen. Also has a very fast delivery system.",
+        "rating": "4"
     }
     
 ]
