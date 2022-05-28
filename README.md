@@ -2,7 +2,7 @@
 
 An automotive parts manufacturer website for ordering and managing auto parts.
 
-Live Site: 
+Live Site: https://auto-parts-manufacturer.web.app/
 
 ## Website Overview
 * The home page has products that if chosen takes user to purchase page.
