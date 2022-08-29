@@ -11,8 +11,8 @@ const MyProfile = () => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{user?.displayName}</h2>
                     <p>{user?.email}</p>
-
                 </div>
+
                 {/* about */}
                 <div class="bg-white p-5 shadow-sm rounded-sm">
                     <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
