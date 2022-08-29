@@ -19,7 +19,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="relative">
+    <div className="max-w-7xl mx-auto relative">
       <div className="min-h-screen">
         <Navbar></Navbar>
         <Routes>
