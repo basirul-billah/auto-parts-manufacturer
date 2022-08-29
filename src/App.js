@@ -19,9 +19,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto relative">
-      <div className="min-h-screen">
+    <div className='bg-base-200'>
         <Navbar></Navbar>
+      <div className="max-w-7xl mx-auto relative">
+      <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path="/home" element={<Home></Home>} />
@@ -40,6 +41,7 @@ function App() {
       </div>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
+    </div>
     </div>
   );
 }

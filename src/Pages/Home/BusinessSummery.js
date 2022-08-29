@@ -3,10 +3,8 @@ import React from 'react';
 const BusinessSummery = () => {
     return (
 
-        <section className="flex flex-col justify-center items-center bg-primary m-5 p-5">
+        <section className="flex flex-col justify-center items-centerm-5 p-5 drop-shadow-xl">
             {/* business summery section */}
-            
-            <h1 className="font-bold text-3xl my-4 text-center">Business Summary</h1>
             <div className="stats stats-vertical lg:stats-horizontal shadow">
 
                 <div className="stat">
