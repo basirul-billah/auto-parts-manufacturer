@@ -1,29 +1,24 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Product = ({item}) => {
-    const { _id, name, img, description, minOrder, available, price} = item;
+const Product = ({ item }) => {
+    const { _id, name, img, minOrder, available, price } = item;
     const navigate = useNavigate()
 
     const handleBuyNow = id => {
         navigate(`/products/${id}`);
     }
-    
+
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img className="h-60" src={img} alt="" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">{name}</h2>
-                <p>{description}</p>
-                <div>
-                    <p>{minOrder} units (Min. Order)</p>
-                    <p>{available} items available</p>
-                    <p className="text-lg font-bold">$ {price} USD (Per Unit)</p>
-                </div>
+        <div className="card w-40 md:w-44 bg-base-100 shadow-xl hover:shadow-2xl truncate">
+            <figure><img className='w-full h-32' src={img} alt="product" /></figure>
+            <div className="card-body p-3">
+                <h2 className="truncate font-xl font-bold">{name}</h2>
+                <p>{available} items available</p>
+                <p className="text-slate-700 font-bold">$ {price}</p>
+                <p>{minOrder} units (min. order)</p>
                 <div className="card-actions justify-end">
-                    <button onClick={() => handleBuyNow(_id)} className="btn btn-primary">
-                        Buy Now
-                    </button>
+                    <button onClick={() => handleBuyNow(_id)} className="btn btn-primary w-full">Buy Now</button>
                 </div>
             </div>
         </div>

@@ -11,8 +11,8 @@ const Banner = () => {
                     <h1 className='text-center md:text-left text-2xl lg:text-5xl font-bold mb-8'>Build Your First Engine!</h1>
                     <h1 className='text-center md:text-left lg:text-xl mb-8'>We offer a variety of industry leading products and services to support energetic start-ups to make their own impression on the highly competitive automotive market.</h1>
                     <div>
-                        <input type="text" placeholder="Enter email" className="input input-sm lg:input-lg input-bordered input-primary lg:w-full max-w-xs mr-3" />
-                        <button class="btn btn-sm lg:btn-lg btn-primary">get started</button>
+                        <input type="text" placeholder="Enter email" className="input input-sm lg:input-md input-bordered input-primary lg:w-full max-w-xs mr-3" />
+                        <button className="btn btn-sm lg:btn-md btn-primary">get started</button>
                     </div>
                 </div>
             </section>
