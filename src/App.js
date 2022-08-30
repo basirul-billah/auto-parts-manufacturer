@@ -20,28 +20,28 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className='bg-base-200'>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
       <div className="max-w-7xl mx-auto relative">
-      <div className="min-h-screen">
-        <Routes>
-          <Route path="/" element={<Home></Home>} />
-          <Route path="/home" element={<Home></Home>} />
-          <Route path="/products/:productId" element={<RequireAuth><Purchase/></RequireAuth>}/>
-          <Route path="/dashboard" element={<RequireAuth><Dashboard/></RequireAuth>}>
-            <Route index element={<MyOrders/>}/>
-            <Route path="/dashboard/addreview" element={<AddReview/>}/>
-            <Route path="/dashboard/myprofile" element={<MyProfile/>}/>
-          </Route>
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp/>} />
-          <Route path="/*" element={<NotFound/>}/>
-        </Routes>
+        <div className="min-h-screen">
+          <Routes>
+            <Route path="/" element={<Home></Home>} />
+            <Route path="/home" element={<Home></Home>} />
+            <Route path="/products/:productId" element={<RequireAuth><Purchase /></RequireAuth>} />
+            <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>}>
+              <Route index element={<MyOrders />} />
+              <Route path="/dashboard/addreview" element={<AddReview />} />
+              <Route path="/dashboard/myprofile" element={<MyProfile />} />
+            </Route>
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </div>
       </div>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
-    </div>
     </div>
   );
 }

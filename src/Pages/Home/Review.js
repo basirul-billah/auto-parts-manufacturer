@@ -4,7 +4,7 @@ const Review = ({ review }) => {
     const { customerName, customerReview, rating } = review;
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
             <div className="card-body">
                 <div className='flex justify-start items-start'>
                     <div className="avatar">
@@ -17,7 +17,7 @@ const Review = ({ review }) => {
                         <p>Rating: {rating}</p>
                     </div>
                 </div>
-                        <p>{customerReview}</p>
+                <p>{customerReview}</p>
             </div>
         </div>
     );
