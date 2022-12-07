@@ -14,7 +14,7 @@ const Products = () => {
         <section>
             {/* tools/parts */}
             <h1 className="font-bold text-3xl my-4">Featured Products</h1>
-            <div class="divider"></div> 
+            <div className="divider"></div> 
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 justify-items-center">
                 {
                     products.slice(0, 6).map(product => <Product

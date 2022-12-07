@@ -1,0 +1,200 @@
+[
+    {
+        "id": 3,
+        "name": "AC",
+        "slug": "ac",
+        "image": {
+            "source": "https://www.carlogos.org/logo/AC-logo-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/ac.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/ac.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ac.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Abarth",
+        "slug": "abarth",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Abarth-logo-640x540.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/abarth.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/abarth.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/abarth.jpg"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Abadal",
+        "slug": "abadal",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Abadal-logo-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/abadal.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/abadal.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/abadal.jpg"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Acura",
+        "slug": "acura",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Acura-logo-1990-640x406.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/acura.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/acura.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/acura.jpg"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Aixam",
+        "slug": "aixam",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Aixam-logo-2010-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/aixam.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/aixam.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/aixam.jpg"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Alpine",
+        "slug": "alpine",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Alpine-logo-640x341.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/alpine.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/alpine.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/alpine.jpg"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Alpina",
+        "slug": "alpina",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Alpina-logo-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/alpina.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/alpina.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/alpina.jpg"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Alfa Romeo",
+        "slug": "alfa-romeo",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Alfa-Romeo-logo-2015-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/alfa-romeo.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/alfa-romeo.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/alfa-romeo.jpg"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Alta",
+        "slug": "alta",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Hillman-logo.png",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/alta.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/alta.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/alta.png"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Alvis",
+        "slug": "alvis",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Alvis-logo-640x327.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/alvis.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/alvis.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/alvis.jpg"
+        }
+    },
+    {
+        "id": 13,
+        "name": "AMC",
+        "slug": "amc",
+        "image": {
+            "source": "https://www.carlogos.org/logo/American-Motors-logo-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/amc.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/amc.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/amc.jpg"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Apollo",
+        "slug": "apollo",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Apollo-Automobil-logo-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/apollo.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/apollo.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/apollo.jpg"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Arcfox",
+        "slug": "arcfox",
+        "image": {
+            "source": "https://www.carlogos.org/car-logos/arcfox-logo-1250x220-show.png",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/arcfox.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/arcfox.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/arcfox.png"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Arash",
+        "slug": "arash",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Arash-logo-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/arash.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/arash.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/arash.jpg"
+        }
+    },
+    {
+        "id": 17,
+        "name": "ARO",
+        "slug": "aro",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Gilbern-logo.png",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/aro.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/aro.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/aro.png"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Ariel",
+        "slug": "ariel",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Ariel-logo-2000-640x550.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/ariel.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/ariel.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/ariel.jpg"
+        }
+    },
+    {
+        "id": 19,
+        "name": "Arrival",
+        "slug": "arrival",
+        "image": {
+            "source": "https://www.carlogos.org/car-logos/arrival-logo-2600x350-show.png",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/arrival.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/arrival.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/arrival.png"
+        }
+    },
+    {
+        "id": 20,
+        "name": "Arrinera",
+        "slug": "arrinera",
+        "image": {
+            "source": "https://www.carlogos.org/logo/Arrinera-logo-640x486.jpg",
+            "thumb": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/arrinera.png",
+            "optimized": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/optimized/arrinera.png",
+            "original": "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/original/arrinera.jpg"
+        }
+    }
+]

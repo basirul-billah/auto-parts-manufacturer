@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import BusinessSummery from './BusinessSummery';
-import Newsletter from './Newsletter';
+import Partners from './Partners';
 import Products from './Products';
 import Reviews from './Reviews';
 
@@ -10,10 +10,10 @@ const Home = () => {
     return (
         <div className="p-5">
             <Banner></Banner>
-            <BusinessSummery></BusinessSummery>
+            <Partners></Partners>
             <Products></Products>
+            <BusinessSummery></BusinessSummery>
             <Reviews></Reviews>
-            <Newsletter></Newsletter>
         </div>
     );
 };
